@@ -1,0 +1,20 @@
+{
+  "name": "ring-doorbell-sonos",
+  "version": "1.0.0",
+  "description": "Ring Doorbell api based on the `ring-client-api` npm package",
+  "main": "lib/server.js",
+  "scripts": {
+    "start": "npm run server",
+    "auth": "ring-auth-cli",
+    "server": "tsc && node lib/server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "node-fetch": "^3.3.1",
+    "ring-client-api": "^11.7.1"
+  },
+  "devDependencies": {
+    "@types/ws": "^8.5.4",
+    "typescript": "^4.9.5"
+  }
+}
